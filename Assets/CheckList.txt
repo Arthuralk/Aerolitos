@@ -1,0 +1,13 @@
+Aerolitos Ok
+Ship Ok
+Shoot Ok
+LifeSystem Ok
+HiScore Ok
+Pool Party Ok
+InputSystem Ok
+DiscoVoador1 Ok
+DiscoVoador2 Ok
+SpriteAtlas Ok
+HiperSpace Ok
+Touch Ok
+

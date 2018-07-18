@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sprites
+  m_EditorData:
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 16
+      compressionQuality: 0
+      maxTextureSize: 1024
+      textureCompression: 2
+      filterMode: 2
+      generateMipMaps: 1
+      readable: 0
+      crunchedCompression: 1
+      sRGB: 0
+    platformSettings: []
+    packingParameters:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 8692d1107aaae42448604e23660e44f7, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 5ed41f4116424084a83199fb58ef94ee, type: 3}
+  - {fileID: 21300000, guid: c27482e65f8f0c945bbb5a10c82091d0, type: 3}
+  - {fileID: 21300000, guid: fa15e7c0ca5fc7b40ab07840a009a6fb, type: 3}
+  - {fileID: 21300000, guid: 37915f7b41a4c9145a7c5e708675e4e2, type: 3}
+  - {fileID: 21300000, guid: 97c571cd557fe744e80af1c925f87997, type: 3}
+  - {fileID: 21300000, guid: 397a21a9cc7cd4f47b844384439112c8, type: 3}
+  - {fileID: 21300000, guid: aa5006721531765499fb19d45cba97e5, type: 3}
+  - {fileID: 21300000, guid: 67ca9d3eff20bf347825966e364cce8f, type: 3}
+  - {fileID: 21300000, guid: eab8c4d5b8b53f54fa2d1f80f7efaedd, type: 3}
+  - {fileID: 21300000, guid: f2f0a0f490c5dd244b71bd66cfe4468e, type: 3}
+  - {fileID: 21300000, guid: 88ef2d4fddd0d444da6254f47d55a014, type: 3}
+  - {fileID: 21300000, guid: 487fea218428ba24bb55f7dc57707c58, type: 3}
+  - {fileID: 21300000, guid: c01d7ba0b9b1e7e44bba6c3c498a350a, type: 3}
+  - {fileID: 21300000, guid: 4aa4181ba3f82ad45ad38936e9975fb7, type: 3}
+  - {fileID: 21300000, guid: 672c6f2f14c8d1545bc115ba9e2fd7c2, type: 3}
+  - {fileID: 21300000, guid: ea29cfd062a6360409bd3b855a8da6ac, type: 3}
+  - {fileID: 21300000, guid: d2b9a83884176bd47aa81bb42d9daea6, type: 3}
+  - {fileID: 21300000, guid: bb7b75e349ee0924b9593805364e4686, type: 3}
+  - {fileID: 21300000, guid: ab5f0532f4af1ca4d8d1a14416592274, type: 3}
+  - {fileID: 21300000, guid: e5650a6be7d48fc48a9da462d03e5325, type: 3}
+  - {fileID: 21300000, guid: eef7db1078ddede43a728528be3cfa39, type: 3}
+  - {fileID: 21300000, guid: bde8e1bb7afa60d4ebb45a676d0a7233, type: 3}
+  - {fileID: 21300000, guid: f52f5d138b479564ab22abe528a997d1, type: 3}
+  - {fileID: 21300000, guid: 0c43752731d638d4cb2b8f89b8c515c8, type: 3}
+  - {fileID: 21300000, guid: fdd153ba3dbdd23499038387fbd2bc43, type: 3}
+  - {fileID: 21300000, guid: a6b9f72798476634dac7f30d10fb5abf, type: 3}
+  - {fileID: 21300000, guid: 32c12efa02214234e9c8a85f33330c44, type: 3}
+  - {fileID: 21300000, guid: 3e5b2befa1128244a8dc8d4cfdcdea72, type: 3}
+  - {fileID: 21300000, guid: f1b1b2d9b3a684241954ce8bbf3c49ef, type: 3}
+  - {fileID: 21300000, guid: 35b6c67b8a8fad249b36797d253942a7, type: 3}
+  - {fileID: 21300000, guid: 0a15107aa51e38b449917b6a16df86a1, type: 3}
+  - {fileID: 21300000, guid: 08aa33cbd7a5414469da0da2521f3cb0, type: 3}
+  - {fileID: 21300000, guid: e753950b81479e044961b359bc4a0ec8, type: 3}
+  - {fileID: 21300000, guid: 48a42cbc6c4e66740b7eaf8dd758e3bc, type: 3}
+  - {fileID: 21300000, guid: f3b3065581b6ba14482103726f021c91, type: 3}
+  - {fileID: 21300000, guid: aaf78fdbd3a864a4a9430529e498006b, type: 3}
+  - {fileID: 21300000, guid: d2152d137a84e69448c9f737b1b22ef7, type: 3}
+  - {fileID: 21300000, guid: bbc8950c489cc3e42b4fe7b4d9dda863, type: 3}
+  - {fileID: 21300000, guid: d5e0a5af15375ff49a4d807217da9475, type: 3}
+  - {fileID: 21300000, guid: 29f53818c5e687b4d962c1f840ffc67c, type: 3}
+  - {fileID: 21300000, guid: 5a88f8042968ff641a0aa292e1394952, type: 3}
+  - {fileID: 21300000, guid: 896190f96036f4b41995a23da934531e, type: 3}
+  - {fileID: 21300000, guid: ba1a0f1aeb51f824988c219ed9b191ba, type: 3}
+  - {fileID: 21300000, guid: a074d722a093d644c9edfa2d9241c8ee, type: 3}
+  - {fileID: 21300000, guid: 581766bb0d643cd44bf7b01ca46b186e, type: 3}
+  - {fileID: 21300000, guid: 3adfc14c3506ad64a8b67351a3c5c6a8, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - meteorBrown_big2
+  - smokeOrange5
+  - smokeGrey5
+  - smokeOrange4
+  - smokeGrey4
+  - meteorBrown_big4
+  - enemyRed3
+  - meteorBrown_big1
+  - playerShip2_green
+  - enemyBlack1
+  - smokeOrange0
+  - smokeGrey0
+  - meteorBrown_big3
+  - shadedDark24
+  - shadedDark25
+  - shadedDark26
+  - shadedDark27
+  - shadedDark46
+  - shadedDark49
+  - explosion3
+  - explosion1
+  - explosion2
+  - explosion5
+  - shadedDark35
+  - shadedDark14
+  - laserBlue08
+  - laserBlue09
+  - explosion4
+  - meteorBrown_med1
+  - meteorBrown_med3
+  - laserBlue11
+  - laserBlue10
+  - playerLife2_green
+  - shotRed
+  - meteorBrown_small1
+  - meteorBrown_small2
+  - laserBlue14
+  - star1
+  - star2
+  - star3
+  - shotLarge
+  - shotOrange
+  - fire15
+  - meteorBrown_tiny1
+  - meteorBrown_tiny2
+  - shotThin
+  m_Tag: Sprites
+  m_IsVariant: 0
