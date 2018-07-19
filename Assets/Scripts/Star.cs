@@ -7,15 +7,17 @@ public class Star : MonoBehaviour
 	public Sprite[] Sprites;
 	float frame;
 	int Frame;
+	SpriteRenderer render;
 	public float FPS = 24;
 
 	void Start()
 	{
 		// Make confusing Stars
 		frame = Random.Range(0, Sprites.Length);
+		render = GetComponent<SpriteRenderer>();
 	}
 
-	void Update()
+	void FixedUpdate()
 	{
 		//Change frames, in the last Disable the gemeObject
 		if (frame >= Sprites.Length)
@@ -23,10 +25,10 @@ public class Star : MonoBehaviour
 			frame = 0;
 			gameObject.SetActive(false);
 		}
-		var render = GetComponent<SpriteRenderer>();
-		if (int.Parse(Mathf.Floor(frame) + "") != Frame)
+
+		if (System.Convert.ToInt16( frame - frame%1) != Frame)
 		{
-			Frame = int.Parse(Mathf.Floor(frame) + "");
+			Frame = System.Convert.ToInt16( frame - frame%1);
 			render.sprite = (Sprites[Frame]);
 		}
 		frame += Time.deltaTime * FPS;

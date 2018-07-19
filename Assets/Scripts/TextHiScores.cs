@@ -53,7 +53,7 @@ public class TextHiScores : MonoBehaviour
 		//decode and print score list
 		var text = GetComponent<UnityEngine.UI.Text>();
 		text.text = "Hi-Scores\n\n";
-		for (int i = 0; i < Mathf.Min(Score.Scores.Length, Score.MaxStorange); i++)
+		for (int i = 0; i < System.Math.Min(Score.Scores.Length, Score.MaxStorange); i++)
 		{
 			var xScore = (Score.Scores[i] - Score.Scores[i] % 1000000) / 1000000;
 			var text1 = (i + 1) + "º";

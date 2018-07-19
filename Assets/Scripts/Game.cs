@@ -5,6 +5,7 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
 	float ReadTime;
+	GameObject Ship;
 	// Revive player
 	public void ReviveShip()
 	{
@@ -21,7 +22,7 @@ public class Game : MonoBehaviour
 
 			if (ReadTime <= 0)
 			{
-				var Ship = transform.Find("Ship").gameObject;
+				Ship = transform.Find("Ship").gameObject;
 				Ship.SetActive(true);
 				Ship.GetComponent<Ship>().Start();
 			}

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StarsSpawner : MonoBehaviour
 {
+	Vector2 pos;
 	public GameObject Star;
 	Pool StarPool;
 	// Use this for initialization
@@ -16,7 +17,9 @@ public class StarsSpawner : MonoBehaviour
 	void FixedUpdate()
 	{
 		Star = StarPool.Instantiate();
-		Star.transform.position = new Vector2(Random.Range(-9, 9), Random.Range(-5, 5));
+		pos.x = Random.Range(-9, 9);
+		pos.y = Random.Range(-5, 5);
+		Star.transform.position = pos;
 		Star.transform.parent = transform;
 	}
 }

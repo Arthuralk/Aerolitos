@@ -28,10 +28,11 @@ public class SpawnAerolito : MonoBehaviour
 		//Spawn 1 Aerolito per time
 		if (time <= 0)
 		{
-			Aerolito = Instantiate(0, new Vector2(0, 0));
+			Aerolito = Instantiate(0, Vector2.zero);
 
 			time = (300 - Score.points) / 100;
-			time = Mathf.Clamp(time, 0.5f, 3);
+			time = System.Math.Min(time, 3);
+			time = System.Math.Max(0.5f, time);
 		}
 		time -= Time.deltaTime;
 	}

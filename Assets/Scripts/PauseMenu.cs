@@ -91,7 +91,13 @@ public class PauseMenu : MonoBehaviour
 
 	void Start()
 	{
+        printText();
+	}
 
+	void printText()
+	{
+		text.GetComponent<UnityEngine.UI.Text>().text = "Pause\n\n" +
+            Selection(Cursor);
 	}
 
 	// Update is called once per frame
@@ -122,9 +128,15 @@ public class PauseMenu : MonoBehaviour
 				time = 1;
 				run(Options[Cursor]);
 			}
+			if (time>0)
+			{
+                printText();
+			}
 		}
-		time -= Time.deltaTime * 3;
-		text.GetComponent<UnityEngine.UI.Text>().text = "Pause\n\n" +
-			Selection(Cursor);
+		else
+		{
+			time -= Time.deltaTime * 3;
+		}
+
 	}
 }

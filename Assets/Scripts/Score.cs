@@ -14,6 +14,7 @@ public class Score : MonoBehaviour
 		}
 		set
 		{
+			view = true;
 			m_points = value;
 			//add a life by n points
 			if (m_points / 1000 > Life)
@@ -32,16 +33,17 @@ public class Score : MonoBehaviour
 	public static int MaxStorange = 20;
 	static string Filename = "Hiscores.data";
 	static int Life;
+	static public bool view;
 	static void lifeUp()
 	{
-		var lifeUp = Instantiate
+		var lifeup = Instantiate
 		(
 			UnityEditor.AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefab/LifeUp.prefab"),
 			new Vector3(1000, 0, 0),
 			new Quaternion(0, 0, 0, 0)
 		);
-		lifeUp.GetComponent<AudioSource>().Play();
-        Destroy(lifeUp, 1);
+		lifeup.GetComponent<AudioSource>().Play();
+        Destroy(lifeup, 1);
 		Ship.Life += 1;
 	}
 	//return if current score is elegible to ranking
@@ -99,6 +101,4 @@ public class Score : MonoBehaviour
 		Hi = (Scores[0] - Scores[0] % 1000000) / 1000000;
 		save();
 	}
-
-
 }

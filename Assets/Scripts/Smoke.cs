@@ -11,8 +11,15 @@ public class Smoke : MonoBehaviour
 	Sprite[] Sprites;
 	public int Type;
 	public float frame;
+	public int Frame;
 	public float fps = 3;
+	SpriteRenderer render;
 	static public Pool SmokePool;
+
+	void Start()
+	{
+		render = GetComponent<SpriteRenderer>();
+	}
 
 	//Spawn smokes, if fail, make the pool party and Spawn smokes
 	public static GameObject Instantiate(GameObject _prefab = null)
@@ -45,7 +52,12 @@ public class Smoke : MonoBehaviour
 		{
 			Sprites = Fire; ;
 		}
-		GetComponent<SpriteRenderer>().sprite = (Sprites[int.Parse(Mathf.Floor(frame) + "")]);
+		if (System.Convert.ToInt16(frame - frame % 1) != Frame)
+		{
+			Frame = System.Convert.ToInt16(frame - frame % 1);
+			render.sprite = (Sprites[Frame]);;
+		}
+
 		frame += Time.deltaTime * fps;
 		if (frame >= Sprites.Length)
 		{

@@ -63,7 +63,7 @@ public class Pool
 			catch (System.Exception)
 			{
 				List[i] = null;
-			};
+			}
 		}
 	}
 
