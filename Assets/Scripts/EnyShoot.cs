@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class EnyShoot : MonoBehaviour
 {
@@ -33,9 +34,9 @@ public class EnyShoot : MonoBehaviour
 	{
 		//change frame
 
-		if (System.Convert.ToInt16(frame - frame % 1) != Frame)
+		if (System.Convert.ToInt16(Math.Floor(frame)) != Frame)
 		{
-			Frame = System.Convert.ToInt16(frame - frame % 1);
+			Frame = System.Convert.ToInt16(Math.Floor(frame));
 			render.sprite = (Sprites[Frame]);
 		}
 

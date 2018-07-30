@@ -8,12 +8,14 @@ public class Menu : MonoBehaviour
 	public GameObject Record;
 	public GameObject GamePrefab;
 	public GameObject Pause;
+	public GameObject ship;
 	float WaitToGame;
 	// Use this for initialization
 
 	void Start()
 	{
 		OnEnable();
+		ship = Game.GetComponent<Game>().Ship;
 	}
 	void OnEnable()
 	{
@@ -32,9 +34,10 @@ public class Menu : MonoBehaviour
 			Game = Instantiate(GamePrefab);
 			Ship.Life = 3;
 			Game.SetActive(true);
-			Game.transform.Find("Ship").gameObject.GetComponent<Ship>().Menu = Record;
-			Game.transform.Find("Ship").gameObject.GetComponent<Ship>().Game = Game.gameObject;
-			Game.transform.Find("Ship").gameObject.GetComponent<Ship>().Pause = Pause.gameObject;
+			ship = Game.GetComponent<Game>().Ship;
+			ship.GetComponent<Ship>().Menu = Record;
+			ship.GetComponent<Ship>().Game = Game.gameObject;
+			ship.gameObject.GetComponent<Ship>().Pause = Pause.gameObject;
 			Pause.GetComponent<PauseMenu>().Menu = gameObject;
 			Pause.GetComponent<PauseMenu>().Game = Game;
 			Score.points = 0;

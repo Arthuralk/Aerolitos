@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Smoke : MonoBehaviour
 {
@@ -52,10 +53,10 @@ public class Smoke : MonoBehaviour
 		{
 			Sprites = Fire; ;
 		}
-		if (System.Convert.ToInt16(frame - frame % 1) != Frame)
+		if (Convert.ToInt16(Math.Floor(frame)) != Frame)
 		{
-			Frame = System.Convert.ToInt16(frame - frame % 1);
-			render.sprite = (Sprites[Frame]);;
+			Frame = Convert.ToInt16(Math.Floor(frame));
+			render.sprite = (Sprites[Frame]);
 		}
 
 		frame += Time.deltaTime * fps;

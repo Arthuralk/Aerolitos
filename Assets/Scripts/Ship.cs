@@ -17,7 +17,7 @@ public class Ship : MonoBehaviour
 	// Use this for initialization
 	void OnDisable()
 	{
-		if (Menu != null)
+        if (Menu != null)
 		{
 			smoke = Smoke.Instantiate(smoke);
 			smoke.GetComponent<Smoke>().frame = 0;

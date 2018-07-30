@@ -8,6 +8,7 @@ public class EnyBot : MonoBehaviour
 	public float speed = 1;
 	public GameObject smoke;
 	public GameObject Shoot;
+	public GameObject Ship;
 	public GameObject LifeUpPre;
 	public GameObject Eny;
 	public float period = 50;
@@ -30,7 +31,7 @@ public class EnyBot : MonoBehaviour
 			try
 			{
 				var p22 = transform.position;
-				var p11 = transform.parent.Find("Ship").position;
+				var p11 = Ship.transform.position;
 				rots = Quaternion.Euler(0, 0, Mathf.Atan2(p22.y - p11.y, p22.x - p11.x) * 180 / Mathf.PI + 90 + Random.Range(-360 * period / 40, 360 * period / 40));
 			}
 			catch (System.Exception)
